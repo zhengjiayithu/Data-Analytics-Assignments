@@ -1,0 +1,143 @@
+<html><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='fon8DF1.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='booA63D.css') }}">
+    </head><body>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 contenteditable="true">A Glance at Data: Visualization</h1>
+                    </div>
+                </div>
+
+    <div class="row">
+        <div class="col-md-12"><hr><a href="{{links[12].href}}"><h2 class='text-primary text-center'>{{links[12].label}}</h2></a>
+        <img src="{{ url_for('static',filename='business4_1.png') }}" width=350 height=200> 
+        <img src="{{ url_for('static',filename='business4_2.png') }}" width=350 height=200> 
+        <img src="{{ url_for('static',filename='business2.png') }}" width=350 height=200> 
+        <img src="{{ url_for('static',filename='business3.png') }}" width=350 height=200> 
+        <img src="{{ url_for('static',filename='user1_1.png') }}" width=350 height=200> 
+        <img src="{{ url_for('static',filename='user1_2.png') }}" width=350 height=200>
+        <img src="{{ url_for('static',filename='user2.png') }}" width=350 height=200>
+        <img src="{{ url_for('static',filename='user3.png') }}" width=350 height=200>
+        <img src="{{ url_for('static',filename='reviews1.png') }}" width=350 height=200> 
+        <img src="{{ url_for('static',filename='reviews2.png') }}" width=350 height=200>
+        <img src="{{ url_for('static',filename='reviews3_1.png') }}" width=350 height=200> 
+        <img src="{{ url_for('static',filename='reviews3_2.png') }}" width=350 height=200> 
+        <img src="{{ url_for('static',filename='reviews3_3.png') }}" width=350 height=200>
+        <img src="{{ url_for('static',filename='join1.png') }}" width=350 height=200>  
+        <img src="{{ url_for('static',filename='join2.png') }}" width=350 height=200>    
+
+
+
+        </div>
+    </div>
+            </div>
+        </div>
+        <div class="category" id="business">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://unsplash.imgix.net/photo-1418479631014-8cbf89db3431?w=1024&amp;q=50&amp;fm=jpg&amp;s=478a9a2196033db7c0bf3c8ba3707f4d" class="img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="text-primary">Montreal Restaurants Data</h2>
+                        <hr>
+                        <h4 class="text-muted">This is the Yelp dataset of restaurants in Montreal.
+                            <br>The features includes: business_id, name, neighborhoods, address, categories,
+                            stars, review_count, etc.
+                            <br>3385 rows * 98 columns</h4>
+                        <hr>
+                        {% for link in links[:4] %}
+                             <a href="{{link.href}}">{{link.label}}</a><br>
+                        {% endfor %}
+                        <p></p>
+                    </div>
+                </div><div class="row"><div class="col-md-12">
+                        <hr>
+                    </div></div>
+            </div>
+        </div>
+        
+        <div class="category" id="user">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="text-primary">Montreal Users Data</h2>
+                        <hr>
+                        <h4 class="text-muted">This is the Yelp dataset of users who have review records in Montreal.
+                            <br>The features includes: user_id, name, review_count, average_stars, votes,
+                            compliments, fans, etc.
+                            <br>21342 rows * 23 columns</h4>
+                        <hr>
+                        {% for link in links[4:7] %}
+                             <a href="{{link.href}}">{{link.label}}</a><br>
+                        {% endfor %}
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://unsplash.imgix.net/photo-1421986527537-888d998adb74?w=1024&amp;q=50&amp;fm=jpg&amp;s=e633562a1da53293c4dc391fd41ce41d" class="img-responsive">
+                    </div>
+                </div><div class="row"><div class="col-md-12">
+                        <hr>
+                    </div></div>
+            </div>
+        </div>
+        
+        <div class="category" id="review">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?w=1024&amp;q=50&amp;fm=jpg&amp;s=c5f2b3df2a4c71532b3b354b8766503c" class="img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="text-primary">Montreal Restaurants' Reviews Data</h2>
+                        <hr>
+                        <h4 class="text-muted">This is the Yelp dataset of reviews for restaurants &nbsp;in Montreal.&nbsp;
+                            <br>The&nbsp;features includes: business_id, user_id, stars, text, date, votes,
+                            etc.
+                            <br>63284 rows * 10 columns</h4>
+                        <hr>
+                        {% for link in links[7:10] %}
+                             <a href="{{link.href}}">{{link.label}}</a><br>
+                        {% endfor %}
+                    </div>
+                </div><div class="row"><div class="col-md-12">
+                        <hr>
+                    </div></div>
+            </div>
+        </div>
+        
+        <div class="category" id="join">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="text-primary">Join the Data to See More...</h2>
+                        <hr>
+                        <h4 class="text-muted">Join the Restaurant Data and Review Data to discover more...</h4>
+                        <hr>
+                        {% for link in links[10:12] %}
+                             <a href="{{link.href}}">{{link.label}}</a><br>
+                        {% endfor %}
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://unsplash.imgix.net/uploads/1411724908903377d4696/2e9b0cb2?w=1024&amp;q=50&amp;fm=jpg&amp;s=2016c4932a7b7a1b629cb6890bff9977" class="img-responsive">
+                    </div>
+                </div><div class="row"><div class="col-md-12">
+                        <hr>
+                    </div></div>
+            </div>
+        </div><div class="col-sm-6 col-md-12">
+                        <h2 class="text-center">
+                            <a href="/">Back</a>
+                        </h2>
+                        <p class="text-center">All rights reserved by IEOR 4752 Data Analytics Project 12&nbsp;</p>
+                    </div>
+        
+        
+    
+
+</body></html>

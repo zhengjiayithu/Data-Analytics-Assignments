@@ -1,0 +1,79 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="Yelp.css" rel="stylesheet" type="text/css">
+  </head>
+    <style type="text/css">
+    {% include "Yelp.css" %}
+    body {background-image: url("{{ url_for('static', filename='bg10.jpg')}}");
+      background-repeat:no-repeat;
+      background-position: right bottom
+    }
+    </style>
+  <body>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center text-primary">Find Food in A Restaurant</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form action="#" method="post">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="http://images.firstwefeast.com/complex/image/upload/d0wujywixlfetkdmehoc.jpg" class="img-responsive">
+          </div>
+          <div class="col-md-6">
+<!--             <h2 class="text-muted">Use text mining to find food in a restaurant. </h2>
+            <h2 class="text-muted">Please input the name of the restaurant. </h2>
+            <h4 class="text-muted">Reference:</h4> -->
+            <h4 class="text-muted">Top 5 restaurants in montreal according to trpadvisor.com: </h4>
+            <h4 class="text-muted">Le Filet</h4>
+            <h4 class="text-muted">Damas Restaurant</h4>
+            <h4 class="text-muted">Club Chasse</h4>
+            <h4 class="text-muted">Europea</h4>
+            <h4 class="text-muted">Bonaparte</h4>
+
+            <p class="lead text-primary">Restaurant's Name: <br>{{ form.keyword }}{{ form.hidden_tag() }}
+            </p>
+            <ul class="list-group"></ul>
+            <input class="btn btn-primary" type="submit"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+    
+        <div class="section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="/" class="btn btn-primary">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">All rights reserved by IEOR 4752 Data Analytics Project 12
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+      
+    
+  
+
+</body></html>

@@ -1,0 +1,117 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="Yelp.css" rel="stylesheet" type="text/css">
+       <style type="text/css">
+    {% include "Yelp.css" %}
+    body {
+  background-image: url("{{ url_for('static', filename='bg8.jpg')}}");
+    background-repeat:no-repeat;
+    background-position: right top
+}
+    </style>
+  </head><body>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center text-primary">Taste The Food You Like</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form action="#" method="post">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="http://italianculturalcentre.ca/wp-content/uploads/2016/06/LongTable.png" class="img-responsive">
+          </div>
+          <div class="col-md-6">
+            <h3 class=" text-left text-muted">Select the food you want to taste.</h3>
+            <h3 class=" text-left text-muted">You can select any number of food. </h3>
+            </p>
+            <table class="table">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td> {{label_food[0]}}  {{form.box1()}} </td>
+                  <td> {{label_food[1]}}  {{form.box2()}} </td>
+                  <td> {{label_food[2]}}  {{form.box3()}} </td>
+                  <td> {{label_food[3]}}  {{form.box4()}} </td>
+                </tr>
+                <tr>
+                  <td> {{label_food[4]}}  {{form.box5()}} </td>
+                  <td> {{label_food[5]}}  {{form.box6()}} </td>
+                  <td> {{label_food[6]}}  {{form.box7()}} </td>
+                  <td> {{label_food[7]}}  {{form.box8()}} </td>
+                </tr>
+                <tr>
+                  <td> {{label_food[8]}}  {{form.box9()}} </td>
+                  <td> {{label_food[9]}}  {{form.box10()}} </td>
+                  <td> {{label_food[10]}}  {{form.box11()}} </td>
+                  <td> {{label_food[11]}}  {{form.box12()}} </td>
+                </tr>
+                <tr>
+                  <td> {{label_food[12]}}  {{form.box13()}} </td>
+                  <td> {{label_food[13]}}  {{form.box14()}} </td>
+                  <td> {{label_food[14]}}  {{form.box15()}} </td>
+                  <td> {{label_food[15]}}  {{form.box16()}} </td>
+                </tr>
+                <tr>
+                  <td> {{label_food[16]}}  {{form.box17()}} </td>
+                  <td> {{label_food[17]}}  {{form.box18()}} </td>
+                  <td> {{label_food[18]}}  {{form.box19()}} </td>
+                  <td> {{label_food[19]}}  {{form.box20()}} </td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <table class="table">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td> Select all the food above  {{form.box_all()}} {{ form.hidden_tag() }} </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="table">
+              <thead></thead>
+            </table>
+            <input class="btn btn-primary" type="submit"/>   
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+
+
+
+        <div class="section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href='/review' class="btn btn-primary">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">All rights reserved by IEOR 4752 Data Analytics Project 12
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+
+</body></html>

@@ -1,0 +1,84 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="Yelp.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+    {% include "Yelp.css" %}
+        body {
+    background-image: url("{{ url_for('static', filename='bg11.jpg')}}");
+    background-repeat:no-repeat;
+    background-position: left top
+}
+    </style>
+  </head><body>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center text-primary">Scores and Flavours of The Food You Selected</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+<!--           <div class="col-md-6">
+            <h3 class="text-left text-muted">
+              <br>Scores of Features
+              <br>
+              <br>The graph shows the rating for each individual feature. We first search
+              each keyword from customer reviews and analyze words before and after them.
+              The rating is calculated using number of positive words divided by number
+              of negative words.</h3>
+          </div> -->
+          <div class="col-md-6">
+            <img src="{{ url_for('static',filename='feature_rating.png') }}" width=1200 height=300>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <h2 class=" text-center text-muted">The Flavour of Each Food</h2>
+      <img src="{{ url_for('static',filename='many_wordcloud.png') }}" width=1200>
+
+
+        <div class="section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="/review/feature" class="btn btn-primary">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="/" class="btn btn-primary">Home Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">All rights reserved by IEOR 4752 Data Analytics Project 12
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  
+
+</div></div></body></html>

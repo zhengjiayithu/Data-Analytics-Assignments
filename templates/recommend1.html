@@ -1,0 +1,63 @@
+<html><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='fon8DF1.css') }}">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='booA63D.css') }}">
+    </head><body>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 contenteditable="true">Step1: What is your personality?</h1>
+                    </div>
+                </div><div class="row"><div class="col-md-12"><hr></div></div>
+            </div>
+        </div>
+        <div class="category" id="business">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://unsplash.imgix.net/photo-1418479631014-8cbf89db3431?w=1024&amp;q=50&amp;fm=jpg&amp;s=478a9a2196033db7c0bf3c8ba3707f4d" class="img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="text-primary">Fun or Cool?</h2>
+                        <div class="col-md-6">
+                            <h4 class="text-primary">I am humorous.</h4>
+                            <form action="#" method="post">
+                            {% for subfield in form.funny %}
+                            <tr>
+                                <td>{{ subfield }}</td>
+                                <td>{{ subfield.label }}</td><br>
+                            </tr>
+                            {% endfor %}
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="text-primary">I like to try new things.</h4>
+                            {% for subfield in form.cool %}
+                            <tr>
+                                <td>{{ subfield }}</td>
+                                <td>{{ subfield.label }}</td><br>
+                            </tr>
+                            {% endfor %}
+                        </div><br>
+                        <p>　</p>
+                        {{ form.hidden_tag() }}
+                        <input class="btn btn-primary" type="submit"/>
+                        </form>
+                        <p></p>
+                    </div>
+                </div><div class="row"><div class="col-md-12">
+                        <hr>
+                    </div></div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-12">
+                        <h4 class="text-center">
+                            <a href="/recommend0">Cancel</a>
+                        </h4>
+                        <p class="text-center">All rights reserved by IEOR 4752 Data Analytics Project 12&nbsp;</p>
+                    </div>
+</body></html>

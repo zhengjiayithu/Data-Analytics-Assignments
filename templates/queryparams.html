@@ -1,0 +1,138 @@
+<html><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="Yelp.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+        {% include "Yelp.css" %}
+        </style>  
+    </head><body>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <b>
+                            <h1 class="text-center text-primary">Search for Restaurants that Meet your Requirements</h1>
+                        </b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?w=1024&amp;q=50&amp;fm=jpg&amp;s=c5f2b3df2a4c71532b3b354b8766503c" class="img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="lead text-left text-muted">
+                            <br>
+                            <br>To find a list of restaurants that meets your requirements, please make
+                            sure no fields are blank.&nbsp;
+                            <br>
+                            <br>Under "Category", please enter a keyword for your search. For example:
+                            'India', 'Chinese', or 'Sushi'.
+                            <br>
+                            <br>For all other drop-down lists, please select one option. After finishing
+                            the selections, click 'Submit' to get a restaurant list.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="#" method="post">
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <table class="table">
+                            <thead>
+                                <tr></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Category</td>
+                                    <td>{{ form.category }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Price Range</td>
+                                    <td>{{ form.price }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Street Parking</td>
+                                    <td>{{ form.parking }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Wheelchair Accessible</td>
+                                    <td>{{ form.access }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Delivery Option</td>
+                                    <td>{{ form.deliver }}</td>
+                                </tr>
+                                <tr>
+                                    <td>Take Reservations</td>
+                                    <td>{{ form.rsvp }}</td>
+                                </tr>
+                                <tr>
+                                    <td>For Late Night</td>
+                                    <td>{{ form.evening }}</td>
+                                </tr>
+                                <tr>
+                                    <td>For Groups</td>
+                                    <td>{{ form.group }}</td>
+                                </tr>
+                                <tr>
+                                    <td>For Breakfast</td>
+                                    <td>{{ form.morning }}</td>
+                                </tr>
+                                <tr>
+                                    <td>For Lunch</td>
+                                    <td>{{ form.noon }}</td>
+                                </tr>
+                                <tr>
+                                    <td>For Dinner</td>
+                                    <td>{{ form.night }} {{ form.hidden_tag() }}</td>
+                                </tr>
+                            </tbody>
+                        </table><input class="btn btn-primary" type="submit"/>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://ununsplash.imgix.net/reserve/RONyPwknRQOO3ag4xf3R_Kinsey.jpg?w=1024&amp;q=50&amp;fm=jpg&amp;s=c8e85e7825f6c74ff13321833a9bc28d" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+
+ <div class="section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="/" class="btn btn-primary">Back</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">All rights reserved by IEOR 4752 Data Analytics Project 12
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+
+</body></html>

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+
+	<div class="map-container">
+  	 	{% include mapfile %}
+	</div>
+	
+	{{data | safe}}
+	<div class="actions">
+		<a href="/">Back</a>
+	</div>
+{% endblock %}
